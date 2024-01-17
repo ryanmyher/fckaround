@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extension URL Setter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label, input {
+            margin-bottom: 10px;
+            width: calc(100% - 20px);
+            display: block;
+        }
+        input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: calc(100% - 20px);
+            border: none;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Chrome Extension URL Setter</h2>
+    <div class="container">
+        <label for="website1">Website 1 URL:</label>
+        <input type="text" id="website1" name="website1"><br>
+        <label for="website2">Website 2 URL:</label>
+        <input type="text" id="website2" name="website2"><br>
+        <button onclick="generateExtension()">Generate</button>
+        <button onclick="resetFields()">Reset</button>
+    </div>
+</body>
+</html>
